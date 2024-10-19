@@ -25,7 +25,7 @@ const registerCompany = async (req, res) => {
     await transporter.sendMail({
       to: email,
       subject: 'Verify your Company Account',
-      text: `Click the link to verify your account: http://localhost:3000/verify-email/${emailVerificationToken}`,
+      text: `Click the link to verify your account: https://mern-job-board.vercel.app/verify-email/${emailVerificationToken}`,
     });
 
     res.status(201).json({ message: 'Registration successful. Please verify your email.' });
