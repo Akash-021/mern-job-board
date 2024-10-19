@@ -2,7 +2,7 @@ import axios from 'axios';
 import { logout } from './auth'; // Logout user if token expires
 
 const instance = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: "https://mern-job-board-z7mi.onrender.com/api",
 });
 
 // Attach token to every request (if available)
