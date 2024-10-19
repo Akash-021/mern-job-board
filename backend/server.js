@@ -6,7 +6,8 @@ require('dotenv').config();
 const app = express();
 connectDB();
 
-app.use(cors());
+app.use(cors({ origin: 'https://mern-job-board.vercel.app' }))
+//app.use(cors());
 app.use(express.json());
 
 app.use('/api/users', require('./routes/userRoutes'));
