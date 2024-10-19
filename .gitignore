@@ -1,0 +1,8 @@
+# Node.js
+backend/node_modules
+backend/.env
+
+# React
+job-board-frontend/node_modules
+job-board-frontend/.env
+build/
